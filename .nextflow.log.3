@@ -1,0 +1,61 @@
+Apr-20 17:06:04.703 [main] DEBUG nextflow.cli.Launcher - $> nextflow run run_pipeline.nf -resume
+Apr-20 17:06:04.762 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
+Apr-20 17:06:04.775 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/putriramadani/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Apr-20 17:06:04.796 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-20 17:06:04.796 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-20 17:06:04.798 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-20 17:06:04.804 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-20 17:06:04.815 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/putriramadani/Documents/GitHub/in-silico_neoantigen-vaccine/nextflow.config
+Apr-20 17:06:04.816 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/putriramadani/Documents/GitHub/in-silico_neoantigen-vaccine/nextflow.config
+Apr-20 17:06:04.830 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/putriramadani/.nextflow/secrets/store.json
+Apr-20 17:06:04.832 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@a0a9fa5] - activable => nextflow.secret.LocalSecretsProvider@a0a9fa5
+Apr-20 17:06:04.834 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-20 17:06:05.032 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-20 17:06:05.039 [main] DEBUG nextflow.cli.CmdRun - Launching `run_pipeline.nf` [hopeful_einstein] DSL2 - revision: 3a037c870b
+Apr-20 17:06:05.040 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-20 17:06:05.040 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-20 17:06:05.066 [main] DEBUG nextflow.Session - Session UUID: c29c366c-fd00-4a0e-91c8-9b81d8adc7d0
+Apr-20 17:06:05.066 [main] DEBUG nextflow.Session - Run name: hopeful_einstein
+Apr-20 17:06:05.067 [main] DEBUG nextflow.Session - Executor pool size: 8
+Apr-20 17:06:05.070 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-20 17:06:05.072 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-20 17:06:05.087 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.4 build 5934
+  Created: 20-01-2025 16:47 UTC (11:47 EDT)
+  System: Mac OS X 14.5
+  Runtime: Groovy 4.0.23 on Java HotSpot(TM) 64-Bit Server VM 23.0.1+11-39
+  Encoding: UTF-8 (UTF-8)
+  Process: 7137@putri-ramadani.local [127.0.0.1]
+  CPUs: 8 - Mem: 16 GB (47 MB) - Swap: 0 (0)
+Apr-20 17:06:05.101 [main] DEBUG nextflow.Session - Work-dir: /Users/putriramadani/Documents/GitHub/in-silico_neoantigen-vaccine/work [Mac OS X]
+Apr-20 17:06:05.101 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/putriramadani/Documents/GitHub/in-silico_neoantigen-vaccine/bin
+Apr-20 17:06:05.107 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-20 17:06:05.111 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-20 17:06:05.121 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-20 17:06:05.125 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Apr-20 17:06:05.168 [main] DEBUG nextflow.Session - Session start
+Apr-20 17:06:05.269 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-20 17:06:05.311 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-20 17:06:05.311 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-20 17:06:05.313 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-20 17:06:05.316 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Apr-20 17:06:05.317 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-20 17:06:05.345 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-20 17:06:05.345 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-20 17:06:05.347 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: simulateImmuneResponse, predictEpitopes, saveExtractedMutations, assembleVaccine, extractMutations, filterEpitopes
+Apr-20 17:06:05.347 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Apr-20 17:06:05.347 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > extractMutations
+Apr-20 17:06:05.347 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > saveExtractedMutations
+Apr-20 17:06:05.347 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_da1fed301175524f: /Users/putriramadani/Documents/GitHub/in-silico_neoantigen-vaccine/run_pipeline.nf
+Apr-20 17:06:05.347 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-20 17:06:05.347 [main] DEBUG nextflow.Session - Session await
+Apr-20 17:06:05.466 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [0e/98bd00] Cached process > extractMutations
+Apr-20 17:06:05.476 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [83/1aafb5] Cached process > saveExtractedMutations
+Apr-20 17:06:05.477 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-20 17:06:05.527 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-20 17:06:05.527 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-20 17:06:05.529 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=2; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=76ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Apr-20 17:06:05.599 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-20 17:06:05.610 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Apr-20 17:06:05.610 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
